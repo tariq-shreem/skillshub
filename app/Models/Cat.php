@@ -12,4 +12,6 @@ class Cat extends Model
     public function skills(){
         return $this->hasMany(Skill::class);
     }
+
+    protected $guarded=['id','created_at','updated_at'];
 }
